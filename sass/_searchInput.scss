@@ -1,0 +1,84 @@
+.search-term{
+    @include flexColumn;
+    padding-top: 45px;
+
+    .logo{
+        font-size: 2rem;
+        letter-spacing: -5px;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+
+    }
+
+
+.search-input{
+    width: 90vw;
+    display: flex;
+    border: 2px solid $search-bar-border;
+    border-radius: 500px;
+    padding: 0.15rem 0.25rem 0.15rem 0.75rem;
+    
+    input[type = "text"] {
+        flex-grow: 1;
+        font-size: 0.75rem;
+        text-align: left;
+        letter-spacing: 0.1rem;
+        border: 0;
+        outline: none;
+        min-width: 150px;
+    }
+
+
+    .button{
+        cursor: pointer;
+        border: 0;
+        background: transparent;
+        min-width: 48px;
+        min-height: 48px;
+        outline: none;
+        i{
+            // font-family: "Font Awesome 5 Free ";
+            font-size: 0.8rem;
+            // color: rgb(89, 81, 81);
+
+        }
+    }
+
+    .button:hover,
+    .button:focus{
+            i{
+                padding-bottom: 0.2rem;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                opacity: 1;
+            }
+
+        }
+
+    .search-button:hover,
+    .search-button:focus{
+            i{
+                color: $logo-blue;
+            }
+    }
+
+
+    .remove:hover,
+    .remove:focus{
+        i{
+            color: $logo-red;
+        }   
+    }
+
+    .remove{
+        justify-content: center;
+        align-items: center;
+        color: $statistics-color;
+        border-right: thin solid $remove-button-color;
+    }
+    .search-input:hover,
+    .search-input:focus-within{ 
+        box-shadow: 1px 4px 9px $search-bar-border; 
+    }  
+    }
+}
