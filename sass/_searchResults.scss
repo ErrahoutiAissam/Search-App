@@ -1,8 +1,8 @@
 .results{
     @include flexColumn;
     padding: 0.5rem 1rem;
-    width: 90vw;
-    @include mq(768px) {
+    width: 70vw;
+    @include mq(650px) {
         width: 75vw;
     }
     @include mq(1025px) {
@@ -14,7 +14,7 @@
         .statistics{
             color: $statistics-color;
             font-size: 0.8rem;
-            @include mq(768px) {
+            @include mq(650px) {
                 font-size: 1rem;
               }
         }
@@ -24,7 +24,7 @@
         .result-item{
             @include flexColumn;
             padding: 0.25rem 0;
-            @include mq(768px) {
+            @include mq(480px) {
                 padding: 0.5rem 0;
               }
         }
@@ -38,7 +38,7 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             padding: 3px 2px;
-            @include mq(768px) {
+            @include mq(480px) {
                 font-size: 1.5rem;
                 line-height: 1.75rem;
                 margin-bottom: 0.5rem;
@@ -79,11 +79,9 @@
         line-height: 20px;
         max-height: 60px;
         text-overflow: ellipsis;
-        @include mq(768px) {
-            font-size: 1rem;
-            line-height: 28px;
-          }
+        @include mq(480px) {
+            font-size: 0.4rem;
+            line-height: 18px;
+        }
     }
-
-   
 }

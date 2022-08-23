@@ -7,10 +7,10 @@
         letter-spacing: -5px;
         font-weight: 600;
         margin-bottom: 0.5rem;
-        @include mq(768px) {
-            font-size: 4rem;
+        @include mq(480px) {
+            font-size: 0.5rem;
             letter-spacing: -10px;
-          }
+        }
 
     }
 
@@ -21,13 +21,13 @@
     border: 2px solid $search-bar-border;
     border-radius: 500px;
     padding: 0.15rem 0.25rem 0.15rem 0.75rem;
-    @include mq(768px) {
-        width: 80vw;
-        padding: 1.25rem 1.5rem;
-      }
-      @include mq(1025px) {
+    @include mq(480px) {
         width: 60vw;
-      }
+        padding: 1.25rem 1.5rem;
+    }
+    @include mq(1025px) {
+        width: 60vw;
+    }
     
     input[type = "text"] {
         flex-grow: 1;
@@ -37,8 +37,9 @@
         border: 0;
         outline: none;
         min-width: 150px;
-        @include mq(768px) {
-            font-size: 1.25rem;
+        @include mq(480px) {
+            font-size: 1.5rem;
+            height: 20px;
           }
     }
 
@@ -53,10 +54,9 @@
         i{
             // font-family: "Font Awesome 5 Free ";
             font-size: 0.8rem;
-            // color: rgb(89, 81, 81);
-            @include mq(768px) {
+            @include mq(480px) {
                 font-size: 1.5rem;
-              }
+            }
 
         }
     }
@@ -78,11 +78,6 @@
                 color: $logo-blue;
             }
     }
-    .searchButton {
-        @include mq(768px) {
-          padding-left: 1rem;
-        }
-      }
 
     .remove:hover,
     .remove:focus{
@@ -90,15 +85,20 @@
             color: $logo-red;
         }   
     }
+    .searchButton {
+        @include mq(480px) {
+          padding-left: 0.5rem;
+        }
+    }
 
     .remove{
         justify-content: center;
         align-items: center;
         color: $statistics-color;
         border-right: thin solid $remove-button-color;
-        @include mq(768px) {
+         @include mq(480px) {
             padding: 0 1rem;
-          }
+        }
     }
     .search-input:hover,
     .search-input:focus-within{ 
