@@ -27,6 +27,12 @@ $font-family: "Roboto", Arial, sans-serif;
     @extend %flex;
     justify-content: center;
 }
+//for the media query
+@mixin mq($size) {
+    @media only screen and (min-width: $size) {
+      @content;
+    }
+  }
 
 *{
     padding: 0;
