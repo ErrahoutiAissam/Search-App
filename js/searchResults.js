@@ -24,6 +24,7 @@ export const buildSearchResult = (arrayResult) => {
     })
 }
 
+//containing the result fo the search
 const createResultItem = (result) => {
     const resultItem = document.createElement("div");
     resultItem.classList.add("result-item");
@@ -38,6 +39,7 @@ const createResultItem = (result) => {
     return resultItem;
 }
 
+//the result image of the search 
 const createResultImg = (result) => {
     const resultImg = document.createElement("div");
     resultImg.classList.add("result-img");
@@ -48,6 +50,7 @@ const createResultImg = (result) => {
     return resultImg;
 }
 
+//the result text of the search 
 const createResultText = (result) => {
     const resultText = document.createElement("div");
     resultText.classList.add("result-text");
@@ -58,15 +61,18 @@ const createResultText = (result) => {
     return resultText;
 }
 
+// removing the statistics line once the remove button is clicked
 export const removeStatisticsLine = () => {
     document.getElementById("statistics").textContent = "";
 }
 
+//seeting a line containning the number of results are of the search
 export const setStatisticsLine = (numOfResults) => {
     const statisticsLine = document.getElementById('statistics');
     if (numOfResults) {
         statisticsLine.textContent = `Displaying ${numOfResults} results.`;
     } else {
+
         statisticsLine.textContent = "No results are available for the search.";
     }
 }
